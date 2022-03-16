@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="description" content= "Accede a las noticias destacadas de todo el mundo" />
+    <meta name="robots" content= "index, follow">
+<link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+    <title>NotiWebs @!!</title>
+</head>
+<body>
+    <nav>
+        <ul class="barra-nav">
+            <li class="barra-1"><a href="recientes/index.html" class="links" >Hoy</a></li><li class="barra-2"><a href="" class="links">Categoria</a></li><li class="barra-3"><a href="" class="links">destacados</a></li>
+        </ul>
+    </nav>
+    <span class="logit">Notiwebs @!!</span>
+    <div class="notices">
+    </div>
+    <script src="app.js"></script>
+    <form action="datos/get.php" method=get name="formulario1">
+        <input type="hidden" name="lang" id= "lang">
+        <input type="hidden" name="category" id= "category">
+        <input type="hidden" name="name" id= "name">
+        </form>
+        
+</body>
+</html>

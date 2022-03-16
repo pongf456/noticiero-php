@@ -1,0 +1,134 @@
+body {
+    padding: 0;
+    background-image: url(img/disc.jpg);
+    margin: 0;
+}
+
+.barra-nav {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    box-sizing: content-box;
+    width: 100%;
+    height: 3vw;
+    background-color: #adaaa5a1;
+}
+.barra-1,.barra-2,.barra-3 {
+    width: 33.3%;
+    height: calc(100% - .5vw);
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    text-align: center;
+    transition-property: border font-size background-color;
+    transition-duration: .2s;
+    padding-top: .5vw;
+    list-style: none;
+    display: inline-block;
+}
+.barra-1:hover,.barra-2:hover,.barra-3:hover {
+    
+    background-color: #908e8b9a;
+    font-size: 1.7vw;
+}
+.barra-1:hover>.links, .barra-2:hover>.links,.barra-3:hover>.links {
+    color: rgb(255, 255, 255);
+}
+.links {
+    display: inline-block;
+    height: 100%;
+    
+    transition: color .4s;
+    color: rgb(255, 255, 255);
+    text-shadow: .3vw .3vw .3vw #928f89;
+    width: 100%;
+    text-decoration: none;
+}
+.logit {
+    display: inline-block;
+    margin: 3vw 0 0 40%;
+    font-family: monospace;
+    font-size:3vw;
+    text-shadow: .2vw .2vw .2vw #af9d80;
+    box-shadow: 0 1vw 1vw #575551;
+    border-bottom: solid 3px brown;
+    animation-name: animatitl;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    overflow-x: visible;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    text-align: center;
+    white-space: nowrap;
+    color: brown;
+}
+@keyframes animatitl {
+    0%{width: 0px;}
+    100%{width: 20vw;}
+}
+.notice {
+    padding: 2%;
+    box-sizing: border-box;
+    box-shadow:.5vw .5vw .5vw #4b4945;
+    margin: 5vw 1vw;
+    font-size: 1.2vw;
+    max-height: 25vw;
+    overflow-y: hidden;
+    border-left: solid .2vw rgba(7, 88, 88, 0.582);
+    transition-property: box-shadow text-shadow;
+    transition-duration: .5s;
+    background-color: #d8d2cb;
+    background-image: url(img/periodico.jpg);
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 30vw;
+}
+.resum {
+    display: inline-block;
+    height: 10vw;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+.notice:hover {
+    text-shadow: .1vw .1vw .1vw #adaaa5;
+    box-shadow: .5vw .5vw .5vw #575551;
+}
+
+.tit-no {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    text-decoration: underline 2px brown;
+    margin: 1% 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    margin-bottom: 5% ;
+}
+.cont-no {
+    margin: 7% 15%;
+    text-align: center;
+    text-overflow: ellipsis;
+    border-left: solid 3px #908e8b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ver-mas {
+position: relative;
+font-size: 1vw;
+font-weight: 900;
+font-family: monospace;
+left: 40%;
+border-bottom: solid .1vw #575551;
+transition: color .4s;
+bottom: 10%;
+}
+.ver-mas:hover {
+color: brown;
+
+}
+a {
+    transition: color .5s;
+    text-decoration: none;
+    color: black;
+}

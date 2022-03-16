@@ -1,0 +1,140 @@
+﻿body {
+    padding: 0;
+    background-image: url(../img/disc.jpg);
+    margin: 0;
+}
+.barra-nav {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    box-sizing: content-box;
+    width: 100%;
+    height: 3vw;
+    background-color: #adaaa5a1;
+}
+.barra-1,.barra-2,.barra-3 {
+    width: 33.3%;
+    height: calc(100% - .5vw);
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    text-align: center;
+    transition-property: border font-size background-color;
+    transition-duration: .2s;
+    padding-top: .5vw;
+    list-style: none;
+    display: inline-block;
+}
+.barra-1:hover,.barra-2:hover,.barra-3:hover {
+    
+    background-color: #908e8b9a;
+    font-size: 1.7vw;
+}
+.barra-1:hover>.links, .barra-2:hover>.links,.barra-3:hover>.links {
+    color: rgb(255, 255, 255);
+}
+.links {
+    display: inline-block;
+    height: 100%;
+    transition: color .4s;
+    color: rgb(255, 255, 255);
+    text-shadow: .3vw .3vw .3vw #928f89;
+    width: 100%;
+    text-decoration: none;
+}
+.logit {
+    display: inline-block;
+    margin: 3vw 0 0 40%;
+    font-family: monospace;
+    font-size:3vw;
+    text-shadow: .2vw .2vw .2vw #af9d80;
+    box-shadow: 0 1vw 1vw #575551;
+    border-bottom: solid 3px brown;
+    animation-name: animatitl;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    overflow-x: visible;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    text-align: center;
+    white-space: nowrap;
+    color: brown;
+}
+@keyframes animatitl {
+    0%{width: 0px;}
+    100%{width: 20vw;}
+}
+.noticia-completa {
+    background-image: url(../img/periodico.jpg);
+    display: inline-block;
+    width: 50vw;
+    box-sizing: content-box;
+    border-top: solid .2vw #237676;
+border-bottom: solid .2vw  #515157;
+    text-shadow: .2vw .2vw .2vw #a3a19e;
+    margin:  5vw 25vw;
+    background-color: #928f89;
+    
+}
+
+.titulo {
+    font-size: 1.7vw;
+    padding: 0 3vw;
+    text-decoration: underline .2vw brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:800;
+    margin: 2vw 0;
+    text-align: center;
+}
+
+.imagen-r {
+    margin: 2.5vw;
+    float: left;
+    box-shadow: .2vw .2vw .2vw #575551;
+width: 40%;
+}
+.informacion {
+    font-size: 1vw;
+    font-weight: 700;
+    font-family:monospace;
+padding: 7vw 3vw;
+}
+.nombre-autor {
+    display: inline-block;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    text-decoration: underline .2vw #575551;
+    color: rgb(90, 23, 23);
+    margin: 2vw;
+}
+.fecha {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: underline .2vw #575551;
+    font-size: 1.2vw;
+    color: #42403d;
+    margin: 2vw;
+}
+.apoyo {
+    margin: 2vw;
+    display: inline-block;
+}
+.like {
+    font-size: 2vw;
+    font-family: monospace;
+}
+.dislike {
+    font-size: 2vw;
+    font-family: monospace;
+}
+.img-l {
+    width: 20%;
+    background-color: black;
+}
+.img-d {
+    width: 20%;
+}
